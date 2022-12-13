@@ -48,15 +48,17 @@ public class IPL {
 			for(Integer c:t.result) {					//Here i'm Traversing the result array in the allteams list
 				
 				if(c==0) {
-					count++;							//If the result is 0 it will incremented count by 1.
-					
+					count++;
+		                                  		//If the result is 0 it will incremented count by 1.
+		
 				}
 				else {
 					count=0;							//If the result is not 0 then count will becomes 0
 					
 				}
 				if(count==n) {							//if we get the n consecutive losses then it will add into the finalteam list
-					finalteam.add(t);		
+					finalteam.add(t);
+		                        break;
 				}
 			}
 		}
